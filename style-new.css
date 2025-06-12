@@ -1,0 +1,64 @@
+/* Modern responsive design */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: url('images/content/v1/6497b8f511b23d243f14aaf7/ad5753d1-42d6-40ce-a873-23b048a22bec/DJI_0092-HDR.JPG') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  position: relative;
+}
+header h1 {
+  font-size: 3rem;
+  animation: slideIn 2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+nav {
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+  z-index: 1000;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+section {
+  padding: 60px 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery img {
+  width: calc(33% - 10px);
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

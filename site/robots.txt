@@ -50,4 +50,4 @@ Disallow:/*&format=ical
 Disallow:/*?reversePaginate=*
 Disallow:/*&reversePaginate=*
 
-Sitemap: https://www.aerial-estate.us/sitemap.xml
+Sitemap: sitemap.xml

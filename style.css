@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+nav a {
+  margin-right: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

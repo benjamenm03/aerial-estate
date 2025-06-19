@@ -37,7 +37,6 @@ body {
   font-weight: bold;
 }
 .video-page iframe {
-  display: block;
   width: 100%;
     aspect-ratio: 16/9;
     height: auto;

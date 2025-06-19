@@ -1,2 +1,0 @@
-# Disable Git LFS for MP4 files so they are served correctly by GitHub Pages
-*.mp4 -filter -diff -merge binary

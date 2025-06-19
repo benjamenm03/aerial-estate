@@ -39,7 +39,7 @@ body {
 .video-page iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 70vh;
   border: 0;
 }
 .video-page nav {

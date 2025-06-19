@@ -1,8 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Work Sans", Arial, sans-serif;
   padding: 20px;
   max-width: 900px;
   margin: auto;
+  background: #f8f8f8;
+  color: #333;
 }
 .video-grid {
   display: grid;
@@ -12,6 +14,16 @@ body {
 .video-grid a {
   text-decoration: none;
   color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+}
+.video-grid a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .video-grid img {
   width: 100%;
@@ -20,7 +32,7 @@ body {
 }
 .video-grid span {
   display: block;
-  margin-top: 8px;
+  padding: 8px;
   text-align: center;
   font-weight: bold;
 }
@@ -31,4 +43,6 @@ body {
 }
 .video-page nav {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }

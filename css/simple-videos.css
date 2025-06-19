@@ -39,7 +39,8 @@ body {
 .video-page iframe {
   display: block;
   width: 100%;
-  height: 70vh;
+    aspect-ratio: 16/9;
+    height: auto;
   border: 0;
 }
 .video-page nav {

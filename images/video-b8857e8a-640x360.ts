@@ -1,0 +1,13 @@
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-TARGETDURATION:6
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-KEY:METHOD=AES-128,URI="https://video.squarespace-cdn.com/content/v1/6497b8f511b23d243f14aaf7/bb255c47-416c-4e6c-84aa-cf71b8857e8a/key/2a3354af341c4e0ec8e55368a9a238ddafb0a62a17c3ffa0f53431f27b44ffec",IV=0x3da66fd2115b6e39006a54643b7a1f2a
+#EXTINF:6.006000,
+#EXT-X-BYTERANGE:1158096@0
+https://video.squarespace-cdn.com/content/v1/6497b8f511b23d243f14aaf7/bb255c47-416c-4e6c-84aa-cf71b8857e8a/segments/mpegts-h264-640:360
+#EXTINF:4.188911,
+#EXT-X-BYTERANGE:902784@1158096
+https://video.squarespace-cdn.com/content/v1/6497b8f511b23d243f14aaf7/bb255c47-416c-4e6c-84aa-cf71b8857e8a/segments/mpegts-h264-640:360
+#EXT-X-ENDLIST

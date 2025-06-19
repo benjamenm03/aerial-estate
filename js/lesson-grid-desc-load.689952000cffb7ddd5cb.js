@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknew_bedford_framework=self.webpackChunknew_bedford_framework||[]).push([[2519],{94237:function(e,r,n){n.r(r);n(94226);r.default=function(e){var r=e.innerHTML;r="<p>"+(r=(r=(r=r.replace(/<p[^>]*>/g,"")).slice(0,-4)).replace(/<\/?p[^>]*>/g,"<br/>"))+"</p>",e.innerHTML=r}}}]);

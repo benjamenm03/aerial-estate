@@ -1,3 +1,4 @@
+/* Hide hamburger menu and overlay entirely */
 .header-menu {
   display: none;
   position: fixed;
@@ -20,13 +21,14 @@
   display: block;
 }
 
-/* Streamlined mobile header: show only the services button */
-@media (max-width: 640px) {
-  /* Hide the hamburger and main navigation */
-  .header-burger {
-    display: none !important;
-  }
+.header-burger,
+.header-menu {
+  display: none !important;
+}
 
+/* Streamlined mobile header: show services and about buttons */
+@media (max-width: 640px) {
+  /* Hide the main navigation */
   .header-nav {
     display: none !important;
   }
@@ -36,7 +38,7 @@
     display: none !important;
   }
 
-  /* Center and expand the services button */
+  /* Center and expand the buttons */
   .header-actions {
     width: 100% !important;
     display: flex !important;
@@ -52,10 +54,5 @@
     display: block !important;
     width: 100% !important;
     margin: 0 5px !important;
-  }
-
-  /* Ensure the overlay menu never appears */
-  .header-menu {
-    display: none !important;
   }
 }

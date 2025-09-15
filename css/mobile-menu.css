@@ -13,3 +13,43 @@
 .header-menu.open{display:block;}
 .header-menu-nav-folder{display:none;}
 .header-menu-nav-folder[data-folder="root"]{display:block;}
+
+/* Show navigation links along the top on small screens instead of the hamburger menu */
+@media (max-width: 640px) {
+  /* Hide the hamburger button */
+  .header-burger {
+    display: none !important;
+  }
+
+  /* Display the standard navigation */
+  .header-nav {
+    display: block !important;
+    width: 100%;
+  }
+
+  .header-nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-nav-item {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .header-nav-item a {
+    display: block;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+
+  /* Ensure the overlay menu never appears */
+  .header-menu {
+    display: none !important;
+  }
+}

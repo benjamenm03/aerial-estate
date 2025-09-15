@@ -1,18 +1,24 @@
-.header-menu{
-  display:none;
-  position:fixed;
-  top:0;
-  left:0;
+.header-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   /* Use viewport units so the menu covers the full screen on mobile */
-  width:100vw;
-  height:100vh;
-  overflow-y:auto;
-  z-index:1000;
-  background-color:white;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1000;
+  background-color: white;
 }
-.header-menu.open{display:block;}
-.header-menu-nav-folder{display:none;}
-.header-menu-nav-folder[data-folder="root"]{display:block;}
+.header-menu.open {
+  display: block;
+}
+.header-menu-nav-folder {
+  display: none;
+}
+.header-menu-nav-folder[data-folder="root"] {
+  display: block;
+}
 
 /* Streamlined mobile header: show only the services button */
 @media (max-width: 640px) {
@@ -32,19 +38,20 @@
 
   /* Center and expand the services button */
   .header-actions {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 
   .header-actions-action--cta {
     flex: 1;
+    display: block !important;
   }
 
   .header-actions-action--cta .btn {
-    display: block;
-    width: 100%;
-    margin: 0 5px;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 5px !important;
   }
 
   /* Ensure the overlay menu never appears */

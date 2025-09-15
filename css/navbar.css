@@ -1,45 +1,22 @@
-/* Simplified fixed header for desktop and mobile */
-#header,
-.header-menu {
-  display: none !important;
-}
-
-.simple-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
+#header {
+  transition: padding 0.3s ease, background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.01);
   -webkit-backdrop-filter: blur(10px);
-  z-index: 1000;
-  padding: 0.5rem 1rem;
+  backdrop-filter: blur(10px);
+}
+#header[style*="translateY(-100%)"] {
+  transform: translateY(0) !important;
+}
+#header .header-inner {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#header.navbar-shrink .header-inner {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
-.simple-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
+#header .header-background,
+#header .header-background-gradient {
+  background: transparent !important;
 }
-
-.simple-header a {
-  background-color: #0077cc;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-body {
-  padding-top: 60px; /* space for fixed header */
-}
-
-@media (max-width: 600px) {
-  .simple-header a {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-}
-

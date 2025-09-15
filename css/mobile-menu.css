@@ -14,37 +14,36 @@
 .header-menu-nav-folder{display:none;}
 .header-menu-nav-folder[data-folder="root"]{display:block;}
 
-/* Show navigation links along the top on small screens instead of the hamburger menu */
+/* Streamlined mobile header: show only the services button */
 @media (max-width: 640px) {
-  /* Hide the hamburger button */
+  /* Hide the hamburger and main navigation */
   .header-burger {
     display: none !important;
   }
 
-  /* Display the standard navigation */
   .header-nav {
-    display: block !important;
+    display: none !important;
+  }
+
+  /* Hide social icons */
+  .header-actions-action--social {
+    display: none !important;
+  }
+
+  /* Center and expand the services button */
+  .header-actions {
     width: 100%;
-  }
-
-  .header-nav-list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
   }
 
-  .header-nav-item {
+  .header-actions-action--cta {
     flex: 1;
-    text-align: center;
-    margin: 0;
   }
 
-  .header-nav-item a {
+  .header-actions-action--cta .btn {
     display: block;
-    padding: 10px;
-    background: #f0f0f0;
-    border-radius: 4px;
+    width: 100%;
     margin: 0 5px;
   }
 
